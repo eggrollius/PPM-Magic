@@ -3,7 +3,7 @@
 The C Image Library is a lightweight library that provides functions for creating and manipulating PPM (Portable Pixmap) images. It allows you to draw shapes, lines, and fill the image with colors. The library provides the flexibility to save the generated images to a file in PPM format.
 
 ## Table of Contents
-
+- [Getting Started](#getting-started)
 - [Library Functions](#library-functions)
   - [create_image](#create_image)
   - [fill_image](#fill_image)
@@ -14,7 +14,33 @@ The C Image Library is a lightweight library that provides functions for creatin
 - [Helper Functions](#helper-functions)
   - [sqr_dist](#sqr_dist)
   - [swap](#swap)
+### Getting Started
 
+To include the C Image Library in your C code, follow these steps:
+
+1. Download the library source files from the [GitHub repository]([ttps://github.com/your-repository-link)](https://github.com/eggrollius/PPM-Magic).
+2. Copy the library source files (`PPMMagic.c`) into your project directory.
+3. In your C code, include the library file using the `#include "PPMMagic.c"`:
+
+```c
+#include "PPMMagic.c"
+```
+
+4. Compile your code along with the library source file:
+
+```shell
+gcc your_code.c library.c -o your_program
+```
+
+5. You can now use the library functions in your code and create amazing PPM images!
+
+Please note that you may need to adjust the compilation command based on your build system and project configuration.
+
+Furthermore: A handy pice of software for viewing PPM images is Feh.
+
+---
+
+That's the updated documentation for your C Image Library! The "Getting Started" section provides instructions on how users can include the library in their C code and start utilizing its functionality.
 ## Library Functions
 
 ### `int create_image(int width, int height)`
