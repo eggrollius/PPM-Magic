@@ -3,20 +3,12 @@
 #include <stdint.h>
 #include <math.h>
 
-int sqr_dist(int x1, int y1, int x2, int y2);
+#include "PPMMagic.h"
 void swap(int *p1, int *p2){
 	int swap = *p1;
 	*p1 = *p2;
 	*p2 = swap;
 }
-int create_image(int w, int h);
-
-int save_image(const char *file_path);
-void draw_circle(int x1, int y1, int r, uint32_t c);
-void draw_rect(int x1, int y1, int x2, int y2, uint32_t c);
-void fill_image(uint32_t c);
-void draw_line(int x1, int y1, int x2, int y2, uint32_t c);
-
 uint32_t *image;///Global var for an array of the image
 int w; int h; //Image width and height
 
